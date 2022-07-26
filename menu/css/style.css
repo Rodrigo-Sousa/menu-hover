@@ -1,0 +1,52 @@
+/* estilizando a classe minhaNavegacao ul*/
+.minhaNavegacao ul {
+    /* Display no módo flex */
+    display: flex;
+    /* Conteúdo justificado centralizado */
+    justify-content: center;
+    /* Itens na mesma linha, podendo ser quebrado se não suportar na mesma linha */
+    flex-wrap: wrap;
+    /* Retirando o ícone de bolinha */
+    list-style-type: none;
+    /* Espaçamento interno */
+    padding: 0;
+  }
+   
+  /* Estilizando a classe minhaNavegacao os conteúdo li com a pseudo-classe com o elemento filho do seu elemento pai */
+  .minhaNavegacao li:not(:last-child) {
+    /* Margem a direita com 20px */
+    margin-right: 20px;
+  }
+   
+  /* Estilizando o link da classe minhaNavegacao */
+  .minhaNavegacao a {
+    /* display de forma block */
+    display: block;
+    /* Tamanho da fonte em 20px */
+    font-size: 20px;
+    /* Cor da letra */
+    color: black;
+    /* Retirando o underline do link */
+    text-decoration: none;
+    /* Espaçamento interno */
+    padding: 7px 15px;
+  }
+   
+  /* Estilizando a classe alvo */
+  .alvo {
+    /* posição */
+    position: absolute;
+    /* borda inferior */
+    border-bottom: 4px solid transparent;
+    /* Posicionamento */
+    z-index: -1;
+    /* Transforme no eixo X */
+    transform: translateX(-60px);
+  }
+   
+  /* Estilizando a classe com o link e a classe alvo */
+  .minhaNavegacao a,
+  .alvo {
+    /* Com a transição */
+    transition: all .35s ease-in-out;
+  }
